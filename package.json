@@ -1,0 +1,19 @@
+{
+    "name": "xaostech-ai",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "wrangler dev",
+        "build": "echo 'no build required for ai.xaostech.io'",
+        "deploy": "wrangler deploy --env production"
+    },
+    "dependencies": {
+        "hono": "latest",
+        "zod": "latest"
+    },
+    "devDependencies": {
+        "wrangler": "latest",
+        "typescript": "latest",
+        "@cloudflare/workers-types": "latest"
+    }
+}

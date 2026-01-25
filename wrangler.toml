@@ -1,0 +1,76 @@
+name = "xaostech-ai"
+compatibility_date = "2025-12-31"
+main = "src/index.ts"
+send_metrics = false
+
+[env.production]
+name = "xaostech-ai"
+main = "src/index.ts"
+routes = [{ pattern = "ai.xaostech.io/*", zone_name = "xaostech.io" }]
+
+[env.production.ai]
+binding = "AI"
+
+[env.production.vars]
+# Model configuration
+DEFAULT_MODEL = "@cf/meta/llama-3.2-3b-instruct"
+REASONING_MODEL = "@cf/qwen/qwq-32b"
+EMBEDDING_MODEL = "@cf/baai/bge-m3"
+# LoRA fine-tunes (set via dashboard after uploading)
+# LINGUA_LORA_ID = "<finetune-id>"
+# EDU_LORA_ID = "<finetune-id>"
+
+# Rate limits
+RATE_LIMIT_PER_MINUTE = "60"
+
+# Neuron budget management (10k free/day)
+DAILY_NEURON_BUDGET = "10000"
+RESERVED_NEURONS_PCT = "20"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "ai-db"
+database_id = "${D1_AI_DB_ID}"
+
+[[env.production.kv_namespaces]]
+binding = "CACHE_KV"
+id = "${KV_AI_CACHE_ID}"
+
+[[env.production.kv_namespaces]]
+binding = "TRAINING_KV"
+id = "${KV_AI_TRAINING_ID}"
+
+# Service bindings to other workers
+[[env.production.services]]
+binding = "EDU"
+service = "xaostech-edu"
+
+[[env.production.services]]
+binding = "LINGUA"
+service = "xaostech-lingua"
+
+[[env.production.services]]
+binding = "DATA"
+service = "xaostech-data"
+
+[env.testing]
+routes = [{ pattern = "ai.testing.local/*", zone_name = "localhost" }]
+
+[env.testing.ai]
+binding = "AI"
+
+[env.testing.vars]
+DEFAULT_MODEL = "@cf/meta/llama-3.2-1b-instruct"
+RATE_LIMIT_PER_MINUTE = "30"
+DAILY_NEURON_BUDGET = "5000"
+RESERVED_NEURONS_PCT = "10"
+
+[observability]
+enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
