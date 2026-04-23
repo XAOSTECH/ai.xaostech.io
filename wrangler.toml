@@ -27,11 +27,6 @@ RATE_LIMIT_PER_MINUTE = "60"
 DAILY_NEURON_BUDGET = "10000"
 RESERVED_NEURONS_PCT = "20"
 
-[[env.production.d1_databases]]
-binding = "DB"
-database_name = "ai-db"
-database_id = "${D1_AI_DB_ID}"
-
 [[env.production.kv_namespaces]]
 binding = "CACHE_KV"
 id = "${KV_AI_CACHE_ID}"
