@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "repository": "ai.xaostech.io",
+    "current_branch": "main",
+    "repo_url": "https://github.com/XAOSTECH/ai.xaostech.io",
+    "generated": "2026-10-15T07:57:42Z",
+    "max_commits": 500
+  },
+  "commits": [
+  {
+    "sha": "27b4d78dc490d73beff6cd098ad9a9ecc1dc6052",
+    "short": "27b4d78",
+    "parents": "15e6277b49777ffd36edc3be88ab0a47fdda56b0 aa207d3104bbea1ece6e7e2c5035deb1158c32cf",
+    "author": "xaostech[bot]",
+    "email": "260314499+xaostech[bot]@users.noreply.github.com",
+    "date": "2026-10-15T07:57:42Z",
+    "timestamp": 1792051062,
+    "subject": "Merge pull request #1 from XAOSTECH:humanise/20261015-075706",
+    "refs": "HEAD -> main, origin/main"
+  },
+  {
+    "sha": "aa207d3104bbea1ece6e7e2c5035deb1158c32cf",
+    "short": "aa207d3",
+    "parents": "15e6277b49777ffd36edc3be88ab0a47fdda56b0",
+    "author": "xaos-bot",
+    "email": "262248812+xaos-bot@users.noreply.github.com",
+    "date": "2026-10-15T07:57:06Z",
+    "timestamp": 1792051026,
+    "subject": "chore: humanise hard-wrapped comments and prose",
+    "refs": "origin/humanise/20261015-075706"
+  },
+  {
+    "sha": "15e6277b49777ffd36edc3be88ab0a47fdda56b0",
+    "short": "15e6277",
+    "parents": "6cf7594a04d927f6690aff3cb250385749b8596d",
+    "author": "xaoscience",
+    "email": "69734795+xaoscience@users.noreply.github.com",
+    "date": "2026-10-14T00:03:15+02:00",
+    "timestamp": 1791928995,
+    "subject": "chore(dc-init): update workflows,actions",
+    "refs": ""
+  },
+  {
+    "sha": "6cf7594a04d927f6690aff3cb250385749b8596d",
+    "short": "6cf7594",
+    "parents": "d727417f663c1a79d2a53e31169be6df59f4cd5a",
+    "author": "xaoscience",
+    "email": "69734795+xaoscience@users.noreply.github.com",
+    "date": "2026-04-23T22:13:25Z",
+    "timestamp": 1776982405,
+    "subject": "chore(ai): drop unused ai-db binding (centralised to data per architecture)",
+    "refs": ""
+  },
+  {
+    "sha": "d727417f663c1a79d2a53e31169be6df59f4cd5a",
+    "short": "d727417",
+    "parents": "3b1a8b4ef16a56c90dea2ccd500d85c4b0115aba",
+    "author": "xaoscience",
+    "email": "69734795+xaoscience@users.noreply.github.com",
+    "date": "2026-03-31T19:57:48Z",
+    "timestamp": 1774987068,
+    "subject": "chore: consolidate workflows into monorepo",
+    "refs": ""
+  },
+  {
+    "sha": "3b1a8b4ef16a56c90dea2ccd500d85c4b0115aba",
+    "short": "3b1a8b4",
+    "parents": "",
+    "author": "xaoscience",
+    "email": "69734795+xaoscience@users.noreply.github.com",
+    "date": "2026-01-25T16:30:31Z",
+    "timestamp": 1769358631,
+    "subject": "Initial commit",
+    "refs": ""
+  }
+],
+  "branches": [
+  {"name":"27b4d78dc490d73beff6cd098ad9a9ecc1dc6052 Merge pull request #1 from XAOSTECH:humanise/20261015-075706","sha":"*","current":false,"merged":false}
+],
+  "tags": [
+
+]
+}
